@@ -50,7 +50,8 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->repository->create($request->all());
+        return redirect('/users')->with('message', 'User was succesfully added!');
     }
 
     /**

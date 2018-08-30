@@ -9,4 +9,11 @@ interface UserInterface
      * @return mixed
      */
     public function all();
+    /**
+     * Create a new user
+     *
+     * @param array $user
+     * @return mixed
+     */
+    public function create(array $user);
 }
