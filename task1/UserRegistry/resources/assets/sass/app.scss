@@ -1,9 +1,9 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600");
+$font-family-sans-serif: 'Poppins', sans-serif;
 
-// Variables
-@import "variables";
+//import font awesome
+$fa-font-path: "../../../node_modules/font-awesome/fonts" !default;
+@import 'node_modules/font-awesome/scss/font-awesome.scss';
 
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";

@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class CreateUserTest extends TestCase
 {
     /**
-     * test to see if create page opens.
+     * test to see if it stores users.
      *
      * @return void
      */

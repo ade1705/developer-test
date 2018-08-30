@@ -10,6 +10,7 @@ class UserRepository implements UserInterface
      * @var User
      */
     private $user;
+    
     /**
      * UserRepository constructor.
      * @param User $user
@@ -18,6 +19,7 @@ class UserRepository implements UserInterface
     {
         $this->user = $user;
     }
+
     /**
      * Return all users
      *
@@ -27,6 +29,7 @@ class UserRepository implements UserInterface
     {
         return $this->user->all();
     }
+
     /**
      * Create a new user
      *
@@ -36,5 +39,27 @@ class UserRepository implements UserInterface
     public function create(array $user)
     {
         return $this->user->create($user);
+    }
+
+    /**
+     * Find user by id
+     *
+     * @param string $id
+     * @return mixed
+     */
+    public function find(string $id)
+    {
+        return $this->user->find($id);
+    }
+
+    /**
+     * Delete user with id
+     *
+     * @param string $id
+     * @return mixed
+     */
+    public function delete(string $id)
+    {
+        return $this->find($id)->delete();
     }
 }

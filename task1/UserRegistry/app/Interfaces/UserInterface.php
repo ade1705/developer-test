@@ -9,6 +9,7 @@ interface UserInterface
      * @return mixed
      */
     public function all();
+    
     /**
      * Create a new user
      *
@@ -16,4 +17,20 @@ interface UserInterface
      * @return mixed
      */
     public function create(array $user);
+
+    /**
+     * Find user by id
+     *
+     * @param string $id
+     * @return mixed
+     */
+    public function find(string $id);
+
+    /**
+     * Delete user with id
+     *
+     * @param string $id
+     * @return mixed
+     */
+    public function delete(string $id);
 }
