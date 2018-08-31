@@ -29,6 +29,7 @@ class UserController extends Controller
     public function index()
     {
         $users = $this->repository->all();
+        $users = $users->sortByDesc('id');
         return view('users.index', compact('users'));
     }
 
