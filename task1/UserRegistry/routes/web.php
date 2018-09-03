@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/','UserController@home');
 Route::get('/users', 'UserController@index');
 Route::post('/users', 'UserController@store');
 Route::delete('/users/{id}', 'UserController@destroy');
