@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-<div class="bg-dark padding-top-6 padding-bottom-6 margin-bottom-2 text-white text-center">
+<div class="user--headerbg margin-bottom-2 text-white text-center">
     <div class="site-container">
         <h1>User Listing</h1>
     </div>

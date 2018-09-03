@@ -24,6 +24,7 @@ body {
     flex-direction: column;
 }
 .site-content {flex: 1; }
+.user--headerbg {background: url('/img/bg.jpg'); background-size: cover; padding-top:7rem; padding-bottom:7rem;}
 .bg-dark {background: $dark;}
 .text-white {color:#fff; }
 .text-red {color:$red; }
