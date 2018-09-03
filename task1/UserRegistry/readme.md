@@ -52,6 +52,9 @@ php artisan db:seed --class=UsersTableSeeder
 
 # Serve
 php artisan serve
+
+# To run tests
+vendor/bin/phpunit or phpunit
 ```
 
 ## License
